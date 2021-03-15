@@ -2,4 +2,5 @@
 pip3 install requests-toolbelt  
 pip3 install pyTelegramBotAPI  
 
-В папке с ботом создать папку "tokens"!
+В папке с ботом создать папку "tokens"!  
+Автор: ItsLegend
