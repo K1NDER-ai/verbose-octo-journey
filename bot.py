@@ -13,14 +13,6 @@ _token_bot = telebot.TeleBot('') #токен
 @_token_bot.message_handler(content_types=['text'])
 def get_text_messages(message):
     if message.text == "💥Из рекомендаций💥":
-        head = {'User-Agent': 'Mozilla/5.0'}
-
-        post = requests.get('https://www.tiktok.com/?lang=ru-RU', headers=head)
-
-        soup = BeautifulSoup(post.content, "html.parser")
-        for link in soup.findAll('a'):
-            print(link.get('href'))
-
         _token_bot.send_message(message.chat.id, "Попозже :(")
 
     if message.text == "🌅Клипы🌅":
